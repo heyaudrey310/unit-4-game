@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <img src="./assets/images/crystals-bg.jpg"> -->
+</head>
+<img src="./assets/images/crystals-bg-copy.jpg">
+
+<body>
+
+    <div class="content-container">
+        <h1>Crystals Collector!</h1>
+        <p>You will be given a random number at the start of the game.</p>
+        <p>here are four crystals below. By clicking on a crystal you will add a specific
+            amount of points to your
+            total score.</p>
+        <p>You win the game by matching your total score to random number, you lose the game if
+            your total score
+            goes
+            above the random number.</p>
+        <p>The value of each crystal is hidden from you until you
+            click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+
+    </div>
+
+    <p id="result"></p>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Number to Guess: <span id="targetNumber"></span>
+        </div>
+    </div>
+
+    <div class="crystal-image">
+
+        <div class="crystal1" data-random=>
+            <img class="crystal-image" src="./assets/images/crystal1.jpg" alt="crystal1" width="50" height="50">
+        </div>
+
+
+        <div class="crystal2" data-random=>
+            <img class="crystal-image" src="./assets/images/crystal2.jpg" alt="crystal2" width=250px height=250px>
+        </div>
+
+        <div class="crystal3" data-random=>
+            <img class="crystal-image" src="./assets/images/crystal3.jpg" alt="crystal3" width=250px height=250px>
+        </div>
+
+        <div class="crystal4" data-random=>
+            <img class="crystal-image" src="./assets/images/crystal4.jpg" alt="crystal4" width=250px height=250px>
+        </div>
+
+    </div>
+
+    <!-- <div class="col-md-6"> -->
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Win Counter: <span id="winCounter"></span>
+        </div>
+    </div>
+    </div>
+
+    <!-- <div class="col-md-6"> -->
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Loss Counter: <span id="lossCounter"></span>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./javascript/game1.js"></script>
+</body>
+
+</html>
